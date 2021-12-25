@@ -67,17 +67,17 @@ def getFaceBox(net, frame, conf_threshold=0.7):
     return frameOpencvDnn, bboxes
 
 
-faceProto = "age_and_gender_detection/modelNweight/opencv_face_detector.pbtxt"
+faceProto = "sdsa/opencv_face_detector.pbtxt"
 
-faceModel = "age_and_gender_detection/modelNweight/opencv_face_detector_uint8.pb"
+faceModel = "sdsa/opencv_face_detector_uint8.pb"
 
-ageProto = "age_and_gender_detection/modelNweight/age_deploy.prototxt"
+ageProto = "sdsa/age_deploy.prototxt"
 
-ageModel = "age_and_gender_detection/modelNweight/age_net.caffemodel"
+ageModel = "sdsa/age_net.caffemodel"
 
-genderProto = "age_and_gender_detection/modelNweight/gender_deploy.prototxt"
+genderProto = "sdsa/gender_deploy.prototxt"
 
-genderModel = "age_and_gender_detection/modelNweight/gender_net.caffemodel"
+genderModel = "sdsa/gender_net.caffemodel"
 
 
 MODEL_MEAN_VALUES = (78.4263377603, 87.7689143744, 114.895847746)
